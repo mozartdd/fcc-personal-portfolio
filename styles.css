@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    background-color: #0d1321;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+#navbar ul li {
+    color: white;
+    font-size: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#navbar ul li a:hover {
+    color: #caf0f8;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(180deg, #0d1321, #3e5c76 );
+}
+
+h1 {
+    font-size: 4rem;
+    padding-top: 50vh;
+}
+
+p {
+    font-size: 2rem;
+    font-style: italic;
+    color: #3e5c76;
+}
+
+h1, p, h2 {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+    background: #3e5c76;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    justify-content: center;
+    gap: 30px;
+    background: linear-gradient(180deg, #3e5c76, #0d1321 );
+}
+
+
+img {
+    object-fit: cover;
+}
+
+figcaption {
+    background-color:#0d1321;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    margin-top: -8px;
+}
