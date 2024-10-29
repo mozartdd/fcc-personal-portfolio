@@ -1,5 +1,13 @@
+:root {
+    --dark-blue: #0d1321;
+    --med-blue: #3e5c76;
+
+}
+
 html {
     scroll-behavior: smooth;
+    text-shadow: var(--dark-blue) 5px 4px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -7,7 +15,7 @@ body {
 }
 
 #navbar {
-    background-color: #0d1321;
+    background-color: var(--dark-blue);
     min-height: 100px;
     display: flex;
     align-items: center;
@@ -29,23 +37,22 @@ body {
 }
 
 #navbar ul li {
-    color: white;
     font-size: 26px;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #caf0f8;
     font-size: 2rem;
 }
 
 #navbar ul li a:hover {
-    color: #caf0f8;
+    color: var(--med-blue);
 }
 
 #welcome-section {
     height: 100vh;
-    background: linear-gradient(180deg, #0d1321, #3e5c76 );
+    background: linear-gradient(180deg, var(--dark-blue), var(--med-blue) );
 }
 
 h1 {
@@ -53,21 +60,21 @@ h1 {
     padding-top: 50vh;
 }
 
-p {
+#welcome-section p {
     font-size: 2rem;
     font-style: italic;
-    color: #3e5c76;
+    color: var(--dark-blue);
 }
 
-h1, p, h2 {
+h1, p, #hh {
     margin: 0;
-    font-family: sans-serif;
     text-align: center;
 }
 
-h2 {
-    font-size: 3.5rem;
-    background: #3e5c76;
+#hh {
+    border-top: 3px solid var(--dark-blue);
+    padding-top: 20px;
+    font-size: 4rem;
 }
 
 #projects {
@@ -75,7 +82,7 @@ h2 {
     grid-template-columns: 450px 450px 450px;
     justify-content: center;
     gap: 30px;
-    background: linear-gradient(180deg, #3e5c76, #0d1321 );
+    background: linear-gradient(180deg, var(--med-blue), var(--dark-blue) );
 }
 
 
@@ -84,9 +91,47 @@ img {
 }
 
 figcaption {
-    background-color:#0d1321;
+    background-color: var(--dark-blue);
     width: 450px;
     height: 50px;
     text-align: center;
     margin-top: -8px;
+}
+
+#contact {
+    height: 60vh;
+    background: linear-gradient(180deg, var(--dark-blue), var(--med-blue) );
+}
+
+#contact h2, #contact p {
+    margin: 0;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+#contact h2 {
+    font-size: 4rem;
+}
+
+#contact p {
+    padding-top: 0;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin-left: 40px;
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease;
+}
+
+.social-icons a:hover {
+    top: 20px;
 }
