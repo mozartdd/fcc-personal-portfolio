@@ -90,6 +90,28 @@ img {
     object-fit: cover;
 }
 
+figcaption:hover::before {
+    content: "< ";
+    color: orange;
+}
+
+figcaption:hover::after {
+    content: " />";
+    color: orange;
+}
+
+
+@media (max-width: 1500px) {
+    #projects {
+        grid-template-columns: 450px 450px ;
+    }
+}
+@media (max-width: 1000px) {
+    #projects {
+        grid-template-columns: 450px ;
+    }
+}
+
 figcaption {
     background-color: var(--dark-blue);
     width: 450px;
