@@ -14,6 +14,10 @@ body {
     margin: 0;
 }
 
+main {
+    background-color: var(--med-blue);
+}
+
 #navbar {
     background-color: var(--dark-blue);
     min-height: 100px;
@@ -72,9 +76,9 @@ h1, p, #hh {
 }
 
 #hh {
-    border-top: 3px solid var(--dark-blue);
     padding-top: 20px;
     font-size: 4rem;
+    background: linear-gradient(var(--med-blue) );
 }
 
 #projects {
@@ -83,6 +87,8 @@ h1, p, #hh {
     justify-content: center;
     gap: 30px;
     background: linear-gradient(180deg, var(--med-blue), var(--dark-blue) );
+    scroll-margin-top: 200px;
+    
 }
 
 
@@ -93,11 +99,13 @@ img {
 figcaption:hover::before {
     content: "< ";
     color: orange;
+    transition: all 0.3s;
 }
 
 figcaption:hover::after {
     content: " />";
     color: orange;
+    transition: all 0.3s;
 }
 
 
@@ -118,6 +126,7 @@ figcaption {
     height: 50px;
     text-align: center;
     margin-top: -8px;
+    transition: all 0.3s;
 }
 
 #contact {
@@ -151,9 +160,22 @@ figcaption {
     margin-left: 40px;
     position: relative;
     top: 0;
-    transition: top 0.3s ease;
+    transition: top 0.4s;
 }
 
 .social-icons a:hover {
-    top: 20px;
+    top: 1rem;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-blue);
+    height: 5rem;
+    align-items: center;
+}
+
+#footer p {
+    font-size: 1.4rem;
+    color: #caf0f8;
 }
